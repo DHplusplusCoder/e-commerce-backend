@@ -38,6 +38,20 @@ public class ProductController {
         }
         return ResponseEntity.ok(optional.get());
     }
+    
+    //Drew
+    
+    @Authorized
+    @GetMapping("/featured")
+    public ResponseEntity<Product> getFeaturedProductById(@PathVariable("id") int id) {
+        return ResponseEntity.ok(optional.get());
+    }
+    
+    
+    
+    
+    
+    
 
     @Authorized
     @PutMapping
