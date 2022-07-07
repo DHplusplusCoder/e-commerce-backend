@@ -9,6 +9,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
+//Drew's Change: Added CurrentlyFeatured Tag
+
 @Data
 @Entity
 @NoArgsConstructor
@@ -17,6 +20,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    bool CurrentlyFeatured;
     private int id;
     private int quantity;
     private double price;

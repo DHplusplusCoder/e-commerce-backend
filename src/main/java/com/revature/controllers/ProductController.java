@@ -52,12 +52,20 @@ public class ProductController {
     
     
     
-
+    //Drew: Add Featured
     @Authorized
-    @PutMapping
+    @PutMapping("/addfeaturedproduct/{id}")
     public ResponseEntity<Product> upsert(@RequestBody Product product) {
         return ResponseEntity.ok(productService.save(product));
     }
+    
+    //Drew: Delete Featured
+    @Authorized
+    @PutMapping("/removefeaturedproduct/{id}")
+    public ResponseEntity<Product> upsert(@RequestBody Product product) {
+        return ResponseEntity.ok(productService.save(product));
+    }
+
 
     @Authorized
     @PatchMapping

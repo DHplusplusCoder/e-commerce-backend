@@ -36,4 +36,19 @@ public class ProductService {
     public void delete(int id) {
         productRepository.deleteById(id);
     }
+    
+    public void BackendTranscribeProductFromServer(int id)
+    {
+        //Converts an entry from the server into an entity the website can display,
+    }
+    
+    public void BackendConvertToFeaturedProduct(int id)
+    {
+        //Converts a regular product to a featured one
+    }
+    
+    public void BackendConvertToRegularProduct(int id)
+    {
+        //Converts a featured product to a regular one.
+    }
 }
